@@ -1,0 +1,82 @@
+.card {
+  width: 25%;
+  height: 545px;
+  background-image: url("../../assets/pattern-dark.jpeg");
+  display: flex;
+  flex-direction: row;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-items: center;
+  border: 1px solid black;
+  margin: 0 auto;
+  margin-top: 50px;
+
+  border-radius: 8px;
+}
+.card-title {
+  color: #ed1a37;
+  text-align: center;
+  font-weight: 400px;
+  font-size: larger;
+  padding: 10px;
+}
+
+.card-image {
+  width: 250px; /* Adjust the width and height as needed */
+  height: 250px;
+  background-color: #fff; /* Example background color */
+  border-radius: 50%; /* Make the image circular */
+  margin: -55px auto; /* Center the image horizontally */
+  margin-bottom: 45px;
+}
+.card-image img {
+  display: flex;
+  align-items: center;
+  border-radius: 50%; /* Make the image circular */
+  max-width: 100%; /* Ensure the image does not exceed the container */
+  max-height: 100%; /* Ensure the image does not exceed the container */
+  margin: 10px auto;
+}
+.card-text {
+  color: #fff;
+  text-align: center;
+  line-height: 1.5;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.card-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 17px;
+}
+
+.card-sizes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 35px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.card-prices {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 75px;
+  color: #ed1a37;
+  text-transform: uppercase;
+}
+.card-body {
+  margin-top: 25px;
+}
+
+.card-btn {
+  display: flex;
+
+  gap: 15px;
+}

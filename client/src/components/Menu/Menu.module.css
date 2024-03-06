@@ -1,0 +1,17 @@
+.menu-container {
+  width: 100%;
+  /* height: auto; */
+  /* height: calc(100vh - 80px); */
+  /* height: auto; */
+  height: 100%;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+  /* background-color: rgb(243, 250, 253); */
+  background-image: url(../../assets/pattern-marbel.jpeg);
+}
+.card-container {
+  display: flex;
+
+  flex-wrap: wrap;
+}

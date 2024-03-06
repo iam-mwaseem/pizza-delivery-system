@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  background: rgb(245, 245, 245);
+  /* overflow-y: auto; */
+  background-image: url("../public/pizza-image-1.jpg");
+  /* background-image: url("../src/assets/pattern-marbel.jpeg"); */
+
+  background-repeat: repeat-x;
+
+  /* position: relative; */
+}
