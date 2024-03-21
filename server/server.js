@@ -1,9 +1,8 @@
 import mongoose from 'mongoose';
-
 import dotenv from 'dotenv';
 import app from './app.js';
 
-dotenv.config({ path: './config.env' });
+dotenv.config({ path: './.env' });
 mongoose.connect(process.env.DATABASE_LOCAL).then(() => {
   console.log('Connected to MongoDB');
 });

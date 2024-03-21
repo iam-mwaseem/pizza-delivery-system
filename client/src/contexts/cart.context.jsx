@@ -67,12 +67,12 @@ const CartProvider = ({ children }) => {
   useEffect(() => {
     console.log(cartItems);
     const newCartTotal = cartItems.reduce(
-      (total, cartItem) => total + cartItem.quantity,
+      (total, cartItem) => total + cartItem.quantity * price,
       0
     );
-    console.log(newCartTotal);
+    console.log("Cart Total from context", newCartTotal);
     setCartTotal(newCartTotal);
-  }, [cartItems]);
+  }, [cartItems, price]);
 
   const addItemToCart = (productToAdd) => {
     setCartItems(addCartItem(cartItems, productToAdd));

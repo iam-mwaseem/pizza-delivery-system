@@ -15,17 +15,16 @@ export default function CheckoutItem({ item }) {
   const [selectedSize, setSelectedSize] = useState(priceName[0]); // Set initial size as the default
   let price;
 
-  // Function to handle size change
-  const handleSizeChange = (event) => {
-    setSelectedSize(event.target.value);
-  };
-
   // Lookup priceValue based on selectedSize
   const selectedPriceValue = priceValue[priceName.indexOf(selectedSize)];
 
   price = selectedPriceValue * quantity;
-  setPrice(price);
-  // console.log(price);
+  // Function to handle size change
+  const handleSizeChange = (event) => {
+    setSelectedSize(event.target.value);
+    setPrice(price);
+  };
+
   function handleDec() {
     removeItemToCart(item);
   }

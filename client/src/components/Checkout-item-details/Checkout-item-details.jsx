@@ -5,6 +5,7 @@ import styles from "./Checkout-item-details.module.css";
 
 export default function CheckoutItemDetails() {
   const { cartItems, cartTotal } = useCart();
+  console.log("CartTotal from checkout-details", cartTotal);
   return (
     <div className={styles["checkout-item-details-container"]}>
       <header className={styles["checkout-item-details-header"]}>
